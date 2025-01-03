@@ -32,7 +32,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/jainkhushi3/todolist.git
+   [https://github.com/jainkhushi3/TodoList.git]
    cd todolist
    ```
 
