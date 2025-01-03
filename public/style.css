@@ -1,0 +1,141 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    color: #6a0dad;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Task Container */
+.task {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover Effect */
+.task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Title */
+.Title {
+    font-style: italic;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Task Description */
+.Description {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Task Status */
+.Status {
+    font-weight: bold;
+    color: #008080;
+    margin-bottom: 15px;
+}
+
+.taskid {
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #530da1;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: underline;
+}
+
+/* Create Task Button */
+button.create {
+    display: block;
+    margin: 20px auto;
+    background-color: #28a745;
+    text-align: center;
+}
+
+button.create:hover {
+    background-color: #218838;
+}
+
+/* Center Align the Create Task Button */
+.create-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Delete Button */
+form button {
+    background-color: #dc3545;
+}
+
+form button:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .task {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
