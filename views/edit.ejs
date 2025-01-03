@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="/style1.css">
+    
+</head>
+<body>
+    <h2>Edit your Task</h2>
+    <p>Task id : <%= task.id %></p>
+    <p>Task Title : <%= task.Title %></p>
+    <p>Task Description : <%= task.Description %></p>
+    <form method="post" action="/tasks/<%=task.id%>?_method=PUT">
+        <label for="Status">Status : </label>
+        <select name="Status" id="Status">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <br><br>
+        <button type="submit">Update Task</button>
+    </form>
+</body>
+</html>
